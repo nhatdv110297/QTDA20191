@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="HoKhauModel">
+  <ClassDiagramComponents>
+    <Class name="HoKhauModel" package="models" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="ID" type="int" visibility="private"/>
+        <Field name="maHoKhau" type="String" visibility="private"/>
+        <Field name="idChuHo" type="int" visibility="private"/>
+        <Field name="maKhuVuc" type="String" visibility="private"/>
+        <Field name="diaChi" type="String" visibility="private"/>
+        <Field name="ngayLap" type="Date" visibility="private"/>
+        <Field name="ngayChuyDi" type="Date" visibility="private"/>
+        <Field name="lyDoChuyen" type="String" visibility="private"/>
+        <Field name="nguoiThucHien" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getID" returnType="int" visibility="public"/>
+        <Method name="setID" returnType="void" visibility="public">
+          <Argument type="int" name="ID"/>
+        </Method>
+        <Method name="getMaHoKhau" returnType="String" visibility="public"/>
+        <Method name="setMaHoKhau" returnType="void" visibility="public">
+          <Argument type="String" name="maHoKhau"/>
+        </Method>
+        <Method name="getIdChuHo" returnType="int" visibility="public"/>
+        <Method name="setIdChuHo" returnType="void" visibility="public">
+          <Argument type="int" name="idChuHo"/>
+        </Method>
+        <Method name="getMaKhuVuc" returnType="String" visibility="public"/>
+        <Method name="setMaKhuVuc" returnType="void" visibility="public">
+          <Argument type="String" name="maKhuVuc"/>
+        </Method>
+        <Method name="getDiaChi" returnType="String" visibility="public"/>
+        <Method name="setDiaChi" returnType="void" visibility="public">
+          <Argument type="String" name="diaChi"/>
+        </Method>
+        <Method name="getNgayLap" returnType="Date" visibility="public"/>
+        <Method name="setNgayLap" returnType="void" visibility="public">
+          <Argument type="Date" name="ngayLap"/>
+        </Method>
+        <Method name="getNgayChuyDi" returnType="Date" visibility="public"/>
+        <Method name="setNgayChuyDi" returnType="void" visibility="public">
+          <Argument type="Date" name="ngayChuyDi"/>
+        </Method>
+        <Method name="getLyDoChuyen" returnType="String" visibility="public"/>
+        <Method name="setLyDoChuyen" returnType="void" visibility="public">
+          <Argument type="String" name="lyDoChuyen"/>
+        </Method>
+        <Method name="getNguoiThucHien" returnType="int" visibility="public"/>
+        <Method name="setNguoiThucHien" returnType="void" visibility="public">
+          <Argument type="int" name="nguoiThucHien"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

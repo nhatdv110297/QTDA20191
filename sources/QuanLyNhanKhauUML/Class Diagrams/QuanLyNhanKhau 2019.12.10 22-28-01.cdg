@@ -1,0 +1,2247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="QuanLyNhanKhau">
+  <ClassDiagramComponents>
+    <Class name="DanhMucBean" package="Bean" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="kind" type="String" visibility="private"/>
+        <Field name="jpn" type="JPanel" visibility="private"/>
+        <Field name="jlb" type="JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="kind"/>
+          <Argument type="JPanel" name="jpn"/>
+          <Argument type="JLabel" name="jlb"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getKind" returnType="String" visibility="public"/>
+        <Method name="setKind" returnType="void" visibility="public">
+          <Argument type="String" name="kind"/>
+        </Method>
+        <Method name="getJpn" returnType="JPanel" visibility="public"/>
+        <Method name="setJpn" returnType="void" visibility="public">
+          <Argument type="JPanel" name="jpn"/>
+        </Method>
+        <Method name="getJlb" returnType="JLabel" visibility="public"/>
+        <Method name="setJlb" returnType="void" visibility="public">
+          <Argument type="JLabel" name="jlb"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="HoKhauBean" package="Bean" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="hoKhauModel" type="HoKhauModel" visibility="private"/>
+        <Field name="chuHo" type="NhanKhauModel" visibility="private"/>
+        <Field name="listNhanKhauModels" type="List&lt;NhanKhauModel&gt;" visibility="private"/>
+        <Field name="listThanhVienCuaHo" type="List&lt;ThanhVienCuaHoModel&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="HoKhauModel" name="hoKhauModel"/>
+          <Argument type="NhanKhauModel" name="chuHo"/>
+          <Argument type="List&lt;NhanKhauModel&gt;" name="listNhanKhauModels"/>
+          <Argument type="List&lt;ThanhVienCuaHoModel&gt;" name="listThanhVienCuaHo"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getHoKhauModel" returnType="HoKhauModel" visibility="public"/>
+        <Method name="setHoKhauModel" returnType="void" visibility="public">
+          <Argument type="HoKhauModel" name="hoKhauModel"/>
+        </Method>
+        <Method name="getChuHo" returnType="NhanKhauModel" visibility="public"/>
+        <Method name="setChuHo" returnType="void" visibility="public">
+          <Argument type="NhanKhauModel" name="chuHo"/>
+        </Method>
+        <Method name="getListNhanKhauModels" returnType="List&lt;NhanKhauModel&gt;" visibility="public"/>
+        <Method name="setListNhanKhauModels" returnType="void" visibility="public">
+          <Argument type="List&lt;NhanKhauModel&gt;" name="listNhanKhauModels"/>
+        </Method>
+        <Method name="getListThanhVienCuaHo" returnType="List&lt;ThanhVienCuaHoModel&gt;" visibility="public"/>
+        <Method name="setListThanhVienCuaHo" returnType="void" visibility="public">
+          <Argument type="List&lt;ThanhVienCuaHoModel&gt;" name="listThanhVienCuaHo"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="MemOfFamily" package="Bean" visibility="public" xPosition="620.0" yPosition="125.0">
+      <Fields>
+        <Field name="nhanKhau" type="NhanKhauBean" visibility="private"/>
+        <Field name="thanhVienCuaHoModel" type="ThanhVienCuaHoModel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="NhanKhauBean" name="nhanKhau"/>
+          <Argument type="ThanhVienCuaHoModel" name="thanhVienCuaHoModel"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getNhanKhau" returnType="NhanKhauBean" visibility="public"/>
+        <Method name="setNhanKhau" returnType="void" visibility="public">
+          <Argument type="NhanKhauBean" name="nhanKhau"/>
+        </Method>
+        <Method name="getThanhVienCuaHoModel" returnType="ThanhVienCuaHoModel" visibility="public"/>
+        <Method name="setThanhVienCuaHoModel" returnType="void" visibility="public">
+          <Argument type="ThanhVienCuaHoModel" name="thanhVienCuaHoModel"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="NhanKhauBean" package="Bean" visibility="public" xPosition="437.0" yPosition="58.0">
+      <Fields>
+        <Field name="nhanKhauModel" type="NhanKhauModel" visibility="private"/>
+        <Field name="chungMinhThuModel" type="ChungMinhThuModel" visibility="private"/>
+        <Field name="listTieuSuModels" type="List&lt;TieuSuModel&gt;" visibility="private"/>
+        <Field name="listGiaDinhModels" type="List&lt;GiaDinhModel&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="NhanKhauModel" name="nhanKhauModel"/>
+          <Argument type="ChungMinhThuModel" name="chungMinhThuModel"/>
+          <Argument type="List&lt;TieuSuModel&gt;" name="listTieuSuModels"/>
+          <Argument type="List&lt;GiaDinhModel&gt;" name="listGiaDinhModels"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getNhanKhauModel" returnType="NhanKhauModel" visibility="public"/>
+        <Method name="setNhanKhauModel" returnType="void" visibility="public">
+          <Argument type="NhanKhauModel" name="nhanKhauModel"/>
+        </Method>
+        <Method name="getChungMinhThuModel" returnType="ChungMinhThuModel" visibility="public"/>
+        <Method name="setChungMinhThuModel" returnType="void" visibility="public">
+          <Argument type="ChungMinhThuModel" name="chungMinhThuModel"/>
+        </Method>
+        <Method name="getListTieuSuModels" returnType="List&lt;TieuSuModel&gt;" visibility="public"/>
+        <Method name="setListTieuSuModels" returnType="void" visibility="public">
+          <Argument type="List&lt;TieuSuModel&gt;" name="listTieuSuModels"/>
+        </Method>
+        <Method name="getListGiaDinhModels" returnType="List&lt;GiaDinhModel&gt;" visibility="public"/>
+        <Method name="setListGiaDinhModels" returnType="void" visibility="public">
+          <Argument type="List&lt;GiaDinhModel&gt;" name="listGiaDinhModels"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ChangeListPeopleController" package="controllers.HoKhauManagerController" visibility="public" xPosition="4386.0" yPosition="1049.0">
+      <Fields>
+        <Field name="addBtn" type="JButton" visibility="private"/>
+        <Field name="removeBtn" type="JButton" visibility="private"/>
+        <Field name="searchJtf" type="JTextField" visibility="private"/>
+        <Field name="peopleJpn" type="JPanel" visibility="private"/>
+        <Field name="memJpn" type="JPanel" visibility="private"/>
+        <Field name="listMember" type="List&lt;MemOfFamily&gt;" visibility="private"/>
+        <Field name="listPeople" type="List&lt;NhanKhauBean&gt;" visibility="private"/>
+        <Field name="nhanKhauService" type="NhanKhauService" visibility="private" isFinal="true"/>
+        <Field name="hoKhauService" type="HoKhauService" visibility="private" isFinal="true"/>
+        <Field name="tableModelHoKhau" type="TableModelHoKhau" visibility="private" isFinal="true"/>
+        <Field name="COLUMNS_1" type="String[]" visibility="private" isFinal="true"/>
+        <Field name="COLUMNS_2" type="String[]" visibility="private" isFinal="true"/>
+        <Field name="peopleSelected" type="NhanKhauBean" visibility="private"/>
+        <Field name="memSelected" type="MemOfFamily" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="List&lt;MemOfFamily&gt;" name="listMember"/>
+          <Argument type="JButton" name="addBtn"/>
+          <Argument type="JButton" name="removeBtn"/>
+          <Argument type="JTextField" name="searchJtf"/>
+          <Argument type="JPanel" name="peopleJpn"/>
+          <Argument type="JPanel" name="memJpn"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initAction" returnType="void" visibility="public"/>
+        <Method name="setData" returnType="void" visibility="public"/>
+        <Method name="getAddBtn" returnType="JButton" visibility="public"/>
+        <Method name="setAddBtn" returnType="void" visibility="public">
+          <Argument type="JButton" name="addBtn"/>
+        </Method>
+        <Method name="getRemoveBtn" returnType="JButton" visibility="public"/>
+        <Method name="setRemoveBtn" returnType="void" visibility="public">
+          <Argument type="JButton" name="removeBtn"/>
+        </Method>
+        <Method name="getSearchJtf" returnType="JTextField" visibility="public"/>
+        <Method name="setSearchJtf" returnType="void" visibility="public">
+          <Argument type="JTextField" name="searchJtf"/>
+        </Method>
+        <Method name="getPeopleJpn" returnType="JPanel" visibility="public"/>
+        <Method name="setPeopleJpn" returnType="void" visibility="public">
+          <Argument type="JPanel" name="peopleJpn"/>
+        </Method>
+        <Method name="getMemJpn" returnType="JPanel" visibility="public"/>
+        <Method name="setMemJpn" returnType="void" visibility="public">
+          <Argument type="JPanel" name="memJpn"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ChoosePeopleController" package="controllers.HoKhauManagerController" visibility="public" xPosition="1969.0" yPosition="40.0">
+      <Fields>
+        <Field name="nhanKhauBean" type="NhanKhauBean" visibility="private"/>
+        <Field name="searchJtf" type="JTextField" visibility="private"/>
+        <Field name="selectedJtf" type="JTextField" visibility="private"/>
+        <Field name="tableJPanel" type="JPanel" visibility="private"/>
+        <Field name="list" type="List&lt;NhanKhauBean&gt;" visibility="private"/>
+        <Field name="hoKhauService" type="HoKhauService" visibility="private" isFinal="true"/>
+        <Field name="nhanKhauService" type="NhanKhauService" visibility="private" isFinal="true"/>
+        <Field name="tableModelHoKhau" type="TableModelHoKhau" visibility="private" isFinal="true"/>
+        <Field name="COLUMNS" type="String[]" visibility="private" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="NhanKhauBean" name="nhanKhauBean"/>
+          <Argument type="JTextField" name="searchJtf"/>
+          <Argument type="JTextField" name="selectedJtf"/>
+          <Argument type="JPanel" name="tableJPanel"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initAction" returnType="void" visibility="public"/>
+        <Method name="setData" returnType="void" visibility="public"/>
+        <Method name="getNhanKhauBean" returnType="NhanKhauBean" visibility="public"/>
+        <Method name="setNhanKhauBean" returnType="void" visibility="public">
+          <Argument type="NhanKhauBean" name="nhanKhauBean"/>
+        </Method>
+        <Method name="getSearchJtf" returnType="JTextField" visibility="public"/>
+        <Method name="setSearchJtf" returnType="void" visibility="public">
+          <Argument type="JTextField" name="searchJtf"/>
+        </Method>
+        <Method name="getTableJPanel" returnType="JPanel" visibility="public"/>
+        <Method name="setTableJPanel" returnType="void" visibility="public">
+          <Argument type="JPanel" name="tableJPanel"/>
+        </Method>
+        <Method name="getSelectedJtf" returnType="JTextField" visibility="public"/>
+        <Method name="setSelectedJtf" returnType="void" visibility="public">
+          <Argument type="JTextField" name="selectedJtf"/>
+        </Method>
+        <Method name="getList" returnType="List&lt;NhanKhauBean&gt;" visibility="public"/>
+        <Method name="setList" returnType="void" visibility="public">
+          <Argument type="List&lt;NhanKhauBean&gt;" name="list"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ChuyenDiNoiKhacController" package="controllers.HoKhauManagerController" visibility="public" xPosition="3483.0" yPosition="-17.0">
+      <Fields>
+        <Field name="hoKhauBean" type="HoKhauBean" visibility="private"/>
+        <Field name="hoKhauService" type="HoKhauService" visibility="private" isFinal="true"/>
+        <Field name="searchJtf" type="JTextField" visibility="private"/>
+        <Field name="tableJpn" type="JPanel" visibility="private"/>
+        <Field name="list" type="List&lt;HoKhauBean&gt;" visibility="private"/>
+        <Field name="tableModelHoKhau" type="TableModelHoKhau" visibility="private" isFinal="true"/>
+        <Field name="COLUNMS" type="String" visibility="private" isFinal="true"/>
+        <Field name="maHoKhauJtf" type="JTextField" visibility="private"/>
+        <Field name="tenChuHoJtf" type="JTextField" visibility="private"/>
+        <Field name="maKhuVucJtf" type="JTextField" visibility="private"/>
+        <Field name="diaChiJtf" type="JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="HoKhauBean" name="hoKhauBean"/>
+          <Argument type="JTextField" name="searchJtf"/>
+          <Argument type="JPanel" name="tableJpn"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setDataJtf" returnType="void" visibility="public">
+          <Argument type="JTextField" name="maHoKhauJtf"/>
+          <Argument type="JTextField" name="tenChuHoJtf"/>
+          <Argument type="JTextField" name="maKhuVucJtf"/>
+          <Argument type="JTextField" name="diaChiJtf"/>
+        </Method>
+        <Method name="initAction" returnType="void" visibility="public"/>
+        <Method name="setData" returnType="void" visibility="public"/>
+        <Method name="getHoKhauBean" returnType="HoKhauBean" visibility="public"/>
+        <Method name="setHoKhauBean" returnType="void" visibility="public">
+          <Argument type="HoKhauBean" name="hoKhauBean"/>
+        </Method>
+        <Method name="getHoKhauService" returnType="HoKhauService" visibility="public"/>
+        <Method name="getSearchJtf" returnType="JTextField" visibility="public"/>
+        <Method name="setSearchJtf" returnType="void" visibility="public">
+          <Argument type="JTextField" name="searchJtf"/>
+        </Method>
+        <Method name="getTableJpn" returnType="JPanel" visibility="public"/>
+        <Method name="setTableJpn" returnType="void" visibility="public">
+          <Argument type="JPanel" name="tableJpn"/>
+        </Method>
+        <Method name="getList" returnType="List&lt;HoKhauBean&gt;" visibility="public"/>
+        <Method name="setList" returnType="void" visibility="public">
+          <Argument type="List&lt;HoKhauBean&gt;" name="list"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TachHoKhauController" package="controllers.HoKhauManagerController" visibility="public" xPosition="5155.0" yPosition="931.0">
+      <Fields>
+        <Field name="searchJtf" type="JTextField" visibility="private"/>
+        <Field name="tableTopJpn" type="JPanel" visibility="private"/>
+        <Field name="tableBotJpn" type="JPanel" visibility="private"/>
+        <Field name="tableRightJpn" type="JPanel" visibility="private"/>
+        <Field name="chuHoHienTaiJtf" type="JTextField" visibility="private"/>
+        <Field name="maKhuVucJtf" type="JTextField" visibility="private"/>
+        <Field name="diaChiJtf" type="JTextField" visibility="private"/>
+        <Field name="maHoKhauMoiJtf" type="JTextField" visibility="private"/>
+        <Field name="chuHoMoiJtf" type="JTextField" visibility="private"/>
+        <Field name="addBtn" type="JButton" visibility="private"/>
+        <Field name="removeBtn" type="JButton" visibility="private"/>
+        <Field name="cancelBtn" type="JButton" visibility="private"/>
+        <Field name="acceptBtn" type="JButton" visibility="private"/>
+        <Field name="hoKhauService" type="HoKhauService" visibility="private" isFinal="true"/>
+        <Field name="tachHoKhauJFrame" type="JFrame" visibility="private"/>
+        <Field name="listHoKhau" type="List&lt;HoKhauBean&gt;" visibility="private"/>
+        <Field name="listThanhVienTrongHoMoi" type="List&lt;MemOfFamily&gt;" visibility="private" isFinal="true"/>
+        <Field name="listThanhVien" type="List&lt;MemOfFamily&gt;" visibility="private"/>
+        <Field name="tableModelHoKhau" type="TableModelHoKhau" visibility="private" isFinal="true"/>
+        <Field name="COLUMNS_NK" type="String[]" visibility="private" isFinal="true"/>
+        <Field name="COLUNMS" type="String[]" visibility="private" isFinal="true"/>
+        <Field name="hoKhauSelected" type="HoKhauBean" visibility="private"/>
+        <Field name="thanhVienSeclected" type="MemOfFamily" visibility="private"/>
+        <Field name="thanhVienHoMoiSeclected" type="MemOfFamily" visibility="private"/>
+        <Field name="hoKhauMoi" type="HoKhauBean" visibility="private" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JFrame" name="tachHoKhauJFrame"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="init" returnType="void" visibility="public"/>
+        <Method name="setData" returnType="void" visibility="public"/>
+        <Method name="setDataChoose" returnType="void" visibility="public"/>
+        <Method name="setDataHoMoi" returnType="void" visibility="public"/>
+        <Method name="getTachHoKhauJFrame" returnType="JFrame" visibility="public"/>
+        <Method name="setTachHoKhauJFrame" returnType="void" visibility="public">
+          <Argument type="JFrame" name="tachHoKhauJFrame"/>
+        </Method>
+        <Method name="getSearchJtf" returnType="JTextField" visibility="public"/>
+        <Method name="setSearchJtf" returnType="void" visibility="public">
+          <Argument type="JTextField" name="searchJtf"/>
+        </Method>
+        <Method name="getTableTopJpn" returnType="JPanel" visibility="public"/>
+        <Method name="setTableTopJpn" returnType="void" visibility="public">
+          <Argument type="JPanel" name="tableTopJpn"/>
+        </Method>
+        <Method name="getTableBotJpn" returnType="JPanel" visibility="public"/>
+        <Method name="setTableBotJpn" returnType="void" visibility="public">
+          <Argument type="JPanel" name="tableBotJpn"/>
+        </Method>
+        <Method name="getTableRightJpn" returnType="JPanel" visibility="public"/>
+        <Method name="setTableRightJpn" returnType="void" visibility="public">
+          <Argument type="JPanel" name="tableRightJpn"/>
+        </Method>
+        <Method name="getChuHoHienTaiJtf" returnType="JTextField" visibility="public"/>
+        <Method name="setChuHoHienTaiJtf" returnType="void" visibility="public">
+          <Argument type="JTextField" name="chuHoHienTaiJtf"/>
+        </Method>
+        <Method name="getMaKhuVucJtf" returnType="JTextField" visibility="public"/>
+        <Method name="setMaKhuVucJtf" returnType="void" visibility="public">
+          <Argument type="JTextField" name="maKhuVucJtf"/>
+        </Method>
+        <Method name="getDiaChiJtf" returnType="JTextField" visibility="public"/>
+        <Method name="setDiaChiJtf" returnType="void" visibility="public">
+          <Argument type="JTextField" name="diaChiJtf"/>
+        </Method>
+        <Method name="getMaHoKhauMoiJtf" returnType="JTextField" visibility="public"/>
+        <Method name="setMaHoKhauMoiJtf" returnType="void" visibility="public">
+          <Argument type="JTextField" name="maHoKhauMoiJtf"/>
+        </Method>
+        <Method name="getChuHoMoiJtf" returnType="JTextField" visibility="public"/>
+        <Method name="setChuHoMoiJtf" returnType="void" visibility="public">
+          <Argument type="JTextField" name="chuHoMoiJtf"/>
+        </Method>
+        <Method name="getAddBtn" returnType="JButton" visibility="public"/>
+        <Method name="setAddBtn" returnType="void" visibility="public">
+          <Argument type="JButton" name="addBtn"/>
+        </Method>
+        <Method name="getRemoveBtn" returnType="JButton" visibility="public"/>
+        <Method name="setRemoveBtn" returnType="void" visibility="public">
+          <Argument type="JButton" name="removeBtn"/>
+        </Method>
+        <Method name="getCancelBtn" returnType="JButton" visibility="public"/>
+        <Method name="setCancelBtn" returnType="void" visibility="public">
+          <Argument type="JButton" name="cancelBtn"/>
+        </Method>
+        <Method name="getAcceptBtn" returnType="JButton" visibility="public"/>
+        <Method name="setAcceptBtn" returnType="void" visibility="public">
+          <Argument type="JButton" name="acceptBtn"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ThemMoiController" package="controllers.HoKhauManagerController" visibility="public" xPosition="20.0" yPosition="420.0">
+      <Fields>
+        <Field name="chuHo" type="NhanKhauBean" visibility="private"/>
+        <Field name="listThanhVien" type="List&lt;MemOfFamily&gt;" visibility="private"/>
+        <Field name="memTableJpn" type="JPanel" visibility="private"/>
+        <Field name="tableModelHoKhau" type="TableModelHoKhau" visibility="private"/>
+        <Field name="hoKhauService" type="HoKhauService" visibility="private" isFinal="true"/>
+        <Field name="COLUMNS" type="String[]" visibility="private" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="setData" returnType="void" visibility="public">
+          <Argument type="List&lt;MemOfFamily&gt;" name="listMember"/>
+          <Argument type="JPanel" name="tablePanel"/>
+        </Method>
+        <Method name="addNew" returnType="void" visibility="public">
+          <Argument type="HoKhauBean" name="hoKhauBean"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="HoKhauPanelController" package="controllers" visibility="public" xPosition="320.0" yPosition="420.0">
+      <Fields>
+        <Field name="list" type="List&lt;HoKhauBean&gt;" visibility="private"/>
+        <Field name="searchJtf" type="JTextField" visibility="private"/>
+        <Field name="tableJpn" type="JPanel" visibility="private"/>
+        <Field name="hoKhauService" type="HoKhauService" visibility="private" isFinal="true"/>
+        <Field name="tableModelHoKhau" type="TableModelHoKhau" visibility="private" isFinal="true"/>
+        <Field name="COLUNMS" type="String" visibility="private" isFinal="true"/>
+        <Field name="parentJFrame" type="JFrame" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JTextField" name="searchJtf"/>
+          <Argument type="JPanel" name="tableJpn"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initAction" returnType="void" visibility="public"/>
+        <Method name="setData" returnType="void" visibility="public"/>
+        <Method name="setParentJFrame" returnType="void" visibility="public">
+          <Argument type="JFrame" name="parentJFrame"/>
+        </Method>
+        <Method name="getList" returnType="List&lt;HoKhauBean&gt;" visibility="public"/>
+        <Method name="setList" returnType="void" visibility="public">
+          <Argument type="List&lt;HoKhauBean&gt;" name="list"/>
+        </Method>
+        <Method name="getSearchJtf" returnType="JTextField" visibility="public"/>
+        <Method name="setSearchJtf" returnType="void" visibility="public">
+          <Argument type="JTextField" name="searchJtf"/>
+        </Method>
+        <Method name="getTableJpn" returnType="JPanel" visibility="public"/>
+        <Method name="setTableJpn" returnType="void" visibility="public">
+          <Argument type="JPanel" name="tableJpn"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="HomeCotroller" package="controllers" visibility="public" xPosition="620.0" yPosition="420.0">
+      <Fields>
+        <Field name="tongNhanKhauLb" type="JLabel" visibility="private"/>
+        <Field name="tongHoKhauLb" type="JLabel" visibility="private"/>
+        <Field name="nhanKhauTamTruLb" type="JLabel" visibility="private"/>
+        <Field name="nhanKhauTamVangLb" type="JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JLabel" name="tongNhanKhauLb"/>
+          <Argument type="JLabel" name="tongHoKhau"/>
+          <Argument type="JLabel" name="nhanKhauTamTruLb"/>
+          <Argument type="JLabel" name="nhanKhauTamVangLb"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setData" returnType="void" visibility="public"/>
+        <Method name="getTongNhanKhauLb" returnType="JLabel" visibility="public"/>
+        <Method name="setTongNhanKhauLb" returnType="void" visibility="public">
+          <Argument type="JLabel" name="tongNhanKhauLb"/>
+        </Method>
+        <Method name="getTongHoKhauLb" returnType="JLabel" visibility="public"/>
+        <Method name="setTongHoKhau" returnType="void" visibility="public">
+          <Argument type="JLabel" name="tongHoKhauLb"/>
+        </Method>
+        <Method name="getNhanKhauTamTruLb" returnType="JLabel" visibility="public"/>
+        <Method name="setNhanKhauTamTruLb" returnType="void" visibility="public">
+          <Argument type="JLabel" name="nhanKhauTamTruLb"/>
+        </Method>
+        <Method name="getNhanKhauTamVangLb" returnType="JLabel" visibility="public"/>
+        <Method name="setNhanKhauTamVangLb" returnType="void" visibility="public">
+          <Argument type="JLabel" name="nhanKhauTamVangLb"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="LoginController" package="controllers" visibility="public" xPosition="920.0" yPosition="420.0">
+      <Fields>
+        <Field name="currentUser" type="UserMoldel" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="login" returnType="boolean" visibility="public">
+          <Argument type="String" name="userName"/>
+          <Argument type="String" name="passwod"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MainController" package="controllers" visibility="public" xPosition="1220.0" yPosition="420.0">
+      <Fields>
+        <Field name="jfrMain" type="JFrame" visibility="private"/>
+        <Field name="root" type="JPanel" visibility="private"/>
+        <Field name="kindSelected" type="String" visibility="private"/>
+        <Field name="listDanhMuc" type="List&lt;DanhMucBean&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JPanel" name="root"/>
+          <Argument type="JFrame" name="jfrMain"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setView" returnType="void" visibility="public">
+          <Argument type="JPanel" name="jpnItem"/>
+          <Argument type="JLabel" name="jlbItem"/>
+          <Argument type="String" name="kind"/>
+        </Method>
+        <Method name="setEvent" returnType="void" visibility="public">
+          <Argument type="List&lt;DanhMucBean&gt;" name="listDanhMuc"/>
+        </Method>
+        <Method name="setDefaultColor" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="AddNewController" package="controllers.NhanKhauManagerController" visibility="public" xPosition="1520.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="addNewPeople" returnType="boolean" visibility="public">
+          <Argument type="NhanKhauBean" name="nhanKhauBean"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="DangKyTamTruController" package="controllers.NhanKhauManagerController" visibility="public" xPosition="1820.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="checkCMT" returnType="int" visibility="public">
+          <Argument type="String" name="cmt"/>
+        </Method>
+        <Method name="addNew" returnType="boolean" visibility="public">
+          <Argument type="TamTruModel" name="tamTruModel"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="DangKyTamVangController" package="controllers.NhanKhauManagerController" visibility="public" xPosition="2021.0" yPosition="1049.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="checkCMT" returnType="int" visibility="public">
+          <Argument type="String" name="cmt"/>
+        </Method>
+        <Method name="addNew" returnType="boolean" visibility="public">
+          <Argument type="TamVangModel" name="tamVangModel"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="KhaiTuController" package="controllers.NhanKhauManagerController" visibility="public" xPosition="20.0" yPosition="820.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="checkCMT" returnType="int" visibility="public">
+          <Argument type="String" name="cmt"/>
+        </Method>
+        <Method name="addNew" returnType="boolean" visibility="public">
+          <Argument type="KhaiTuModel" name="khaiTuModel"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TieuSuController" package="controllers.NhanKhauManagerController" visibility="public" xPosition="320.0" yPosition="820.0">
+      <Fields>
+        <Field name="nhanKhauBean" type="NhanKhauBean" visibility="private"/>
+        <Field name="tieuSuJpn" type="JPanel" visibility="private"/>
+        <Field name="giaDinhJpn" type="JPanel" visibility="private"/>
+        <Field name="modelTieuSu" type="DefaultTableModel" visibility="private"/>
+        <Field name="modelGiaDinh" type="DefaultTableModel" visibility="private"/>
+        <Field name="classTableModel" type="ClassTableModel" visibility="private"/>
+        <Field name="COLUMNS_TIEU_SU" type="String[]" visibility="private" isFinal="true"/>
+        <Field name="COLUMNS_GIA_DINH" type="String[]" visibility="private" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JPanel" name="tieuSuJpn"/>
+          <Argument type="JPanel" name="giaDinhJpn"/>
+          <Argument type="NhanKhauBean" name="nhanKhauBean"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setDataTable" returnType="void" visibility="public"/>
+        <Method name="changeData" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="NhanKhauManagerPanelController" package="controllers" visibility="public" xPosition="620.0" yPosition="820.0">
+      <Fields>
+        <Field name="jpnView" type="JPanel" visibility="private"/>
+        <Field name="jtfSearch" type="JTextField" visibility="private"/>
+        <Field name="nhanKhauService" type="NhanKhauService" visibility="private"/>
+        <Field name="listNhanKhauBeans" type="List&lt;NhanKhauBean&gt;" visibility="private"/>
+        <Field name="classTableModel" type="ClassTableModel" visibility="private"/>
+        <Field name="COLUMNS" type="String[]" visibility="private" isFinal="true"/>
+        <Field name="parentJFrame" type="JFrame" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JPanel" name="jpnView"/>
+          <Argument type="JTextField" name="jtfSearch"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initAction" returnType="void" visibility="public"/>
+        <Method name="setDataTable" returnType="void" visibility="public"/>
+        <Method name="setParentJFrame" returnType="void" visibility="public">
+          <Argument type="JFrame" name="parentJFrame"/>
+        </Method>
+        <Method name="refreshData" returnType="void" visibility="public"/>
+        <Method name="getJpnView" returnType="JPanel" visibility="public"/>
+        <Method name="setJpnView" returnType="void" visibility="public">
+          <Argument type="JPanel" name="jpnView"/>
+        </Method>
+        <Method name="getJtfSearch" returnType="JTextField" visibility="public"/>
+        <Method name="setJtfSearch" returnType="void" visibility="public">
+          <Argument type="JTextField" name="jtfSearch"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ThongKePanelController" package="controllers" visibility="public" xPosition="2846.0" yPosition="906.0">
+      <Fields>
+        <Field name="GenderJcb" type="JComboBox" visibility="private"/>
+        <Field name="StatusJcb" type="JComboBox" visibility="private"/>
+        <Field name="tuTuoiJtf" type="JTextField" visibility="private"/>
+        <Field name="denTuoiJtf" type="JTextField" visibility="private"/>
+        <Field name="tuNamJtf" type="JTextField" visibility="private"/>
+        <Field name="denNamJtf" type="JTextField" visibility="private"/>
+        <Field name="jpnView" type="JPanel" visibility="private"/>
+        <Field name="nhanKhauService" type="NhanKhauService" visibility="private"/>
+        <Field name="listNhanKhauBeans" type="List&lt;NhanKhauBean&gt;" visibility="private"/>
+        <Field name="classTableModel" type="ClassTableModel" visibility="private"/>
+        <Field name="COLUMNS" type="String[]" visibility="private" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JComboBox" name="genderJcb"/>
+          <Argument type="JComboBox" name="statusJcb"/>
+          <Argument type="JTextField" name="tuTuoiJtf"/>
+          <Argument type="JTextField" name="denTuoiJtf"/>
+          <Argument type="JTextField" name="tuNamJtf"/>
+          <Argument type="JTextField" name="denNamJtf"/>
+          <Argument type="JPanel" name="jpnView"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getJpnView" returnType="JPanel" visibility="public"/>
+        <Method name="setJpnView" returnType="void" visibility="public">
+          <Argument type="JPanel" name="jpnView"/>
+        </Method>
+        <Method name="setData" returnType="void" visibility="public"/>
+        <Method name="setDataTable" returnType="void" visibility="public"/>
+        <Method name="getGenderJcb" returnType="JComboBox" visibility="public"/>
+        <Method name="setGenderJcb" returnType="void" visibility="public">
+          <Argument type="JComboBox" name="GenderJcb"/>
+        </Method>
+        <Method name="getStatusJcb" returnType="JComboBox" visibility="public"/>
+        <Method name="setStatusJcb" returnType="void" visibility="public">
+          <Argument type="JComboBox" name="StatusJcb"/>
+        </Method>
+        <Method name="getTuTuoiJtf" returnType="JTextField" visibility="public"/>
+        <Method name="setTuTuoiJtf" returnType="void" visibility="public">
+          <Argument type="JTextField" name="tuTuoiJtf"/>
+        </Method>
+        <Method name="getDenTuoiJtf" returnType="JTextField" visibility="public"/>
+        <Method name="setDenTuoiJtf" returnType="void" visibility="public">
+          <Argument type="JTextField" name="denTuoiJtf"/>
+        </Method>
+        <Method name="getTuNamJtf" returnType="JTextField" visibility="public"/>
+        <Method name="setTuNamJtf" returnType="void" visibility="public">
+          <Argument type="JTextField" name="tuNamJtf"/>
+        </Method>
+        <Method name="getDenNamJtf" returnType="JTextField" visibility="public"/>
+        <Method name="setDenNamJtf" returnType="void" visibility="public">
+          <Argument type="JTextField" name="denNamJtf"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ChungMinhThuModel" package="models" visibility="public" xPosition="1220.0" yPosition="820.0">
+      <Fields>
+        <Field name="ID" type="int" visibility="private"/>
+        <Field name="idNhanKhau" type="int" visibility="private"/>
+        <Field name="soCMT" type="String" visibility="private"/>
+        <Field name="ngayCap" type="Date" visibility="private"/>
+        <Field name="noiCap" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getID" returnType="int" visibility="public"/>
+        <Method name="setID" returnType="void" visibility="public">
+          <Argument type="int" name="ID"/>
+        </Method>
+        <Method name="getIdNhanKhau" returnType="int" visibility="public"/>
+        <Method name="setIdNhanKhau" returnType="void" visibility="public">
+          <Argument type="int" name="idNhanKhau"/>
+        </Method>
+        <Method name="getSoCMT" returnType="String" visibility="public"/>
+        <Method name="setSoCMT" returnType="void" visibility="public">
+          <Argument type="String" name="soCMT"/>
+        </Method>
+        <Method name="getNgayCap" returnType="Date" visibility="public"/>
+        <Method name="setNgayCap" returnType="void" visibility="public">
+          <Argument type="Date" name="ngayCap"/>
+        </Method>
+        <Method name="getNoiCap" returnType="String" visibility="public"/>
+        <Method name="setNoiCap" returnType="void" visibility="public">
+          <Argument type="String" name="noiCap"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="DinhChinhModel" package="models" visibility="public" xPosition="3758.0" yPosition="992.0">
+      <Fields>
+        <Field name="ID" type="int" visibility="private"/>
+        <Field name="idHoKhau" type="int" visibility="private"/>
+        <Field name="thongTinThayDoi" type="String" visibility="private"/>
+        <Field name="thayDoiTu" type="String" visibility="private"/>
+        <Field name="thayDoiThanh" type="String" visibility="private"/>
+        <Field name="ngayThayDoi" type="Date" visibility="private"/>
+        <Field name="idNguoiThayDoi" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getID" returnType="int" visibility="public"/>
+        <Method name="setID" returnType="void" visibility="public">
+          <Argument type="int" name="ID"/>
+        </Method>
+        <Method name="getIdHoKhau" returnType="int" visibility="public"/>
+        <Method name="setIdHoKhau" returnType="void" visibility="public">
+          <Argument type="int" name="idHoKhau"/>
+        </Method>
+        <Method name="getThongTinThayDoi" returnType="String" visibility="public"/>
+        <Method name="setThongTinThayDoi" returnType="void" visibility="public">
+          <Argument type="String" name="thongTinThayDoi"/>
+        </Method>
+        <Method name="getThayDoiTu" returnType="String" visibility="public"/>
+        <Method name="setThayDoiTu" returnType="void" visibility="public">
+          <Argument type="String" name="thayDoiTu"/>
+        </Method>
+        <Method name="getThayDoiThanh" returnType="String" visibility="public"/>
+        <Method name="setThayDoiThanh" returnType="void" visibility="public">
+          <Argument type="String" name="thayDoiThanh"/>
+        </Method>
+        <Method name="getNgayThayDoi" returnType="Date" visibility="public"/>
+        <Method name="setNgayThayDoi" returnType="void" visibility="public">
+          <Argument type="Date" name="ngayThayDoi"/>
+        </Method>
+        <Method name="getIdNguoiThayDoi" returnType="int" visibility="public"/>
+        <Method name="setIdNguoiThayDoi" returnType="void" visibility="public">
+          <Argument type="int" name="idNguoiThayDoi"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="GiaDinhModel" package="models" visibility="public" xPosition="3930.0" yPosition="1202.0">
+      <Fields>
+        <Field name="ID" type="int" visibility="private"/>
+        <Field name="idNhanKhau" type="int" visibility="private"/>
+        <Field name="hoTen" type="String" visibility="private"/>
+        <Field name="namSinh" type="Date" visibility="private"/>
+        <Field name="gioiTinh" type="String" visibility="private"/>
+        <Field name="quanHeVoiNhanKhau" type="String" visibility="private"/>
+        <Field name="ngheNghiep" type="String" visibility="private"/>
+        <Field name="diaChiHienTai" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getID" returnType="int" visibility="public"/>
+        <Method name="setID" returnType="void" visibility="public">
+          <Argument type="int" name="ID"/>
+        </Method>
+        <Method name="getIdNhanKhau" returnType="int" visibility="public"/>
+        <Method name="setIdNhanKhau" returnType="void" visibility="public">
+          <Argument type="int" name="idNhanKhau"/>
+        </Method>
+        <Method name="getHoTen" returnType="String" visibility="public"/>
+        <Method name="setHoTen" returnType="void" visibility="public">
+          <Argument type="String" name="hoTen"/>
+        </Method>
+        <Method name="getNamSinh" returnType="Date" visibility="public"/>
+        <Method name="setNamSinh" returnType="void" visibility="public">
+          <Argument type="Date" name="namSinh"/>
+        </Method>
+        <Method name="getGioiTinh" returnType="String" visibility="public"/>
+        <Method name="setGioiTinh" returnType="void" visibility="public">
+          <Argument type="String" name="gioiTinh"/>
+        </Method>
+        <Method name="getQuanHeVoiNhanKhau" returnType="String" visibility="public"/>
+        <Method name="setQuanHeVoiNhanKhau" returnType="void" visibility="public">
+          <Argument type="String" name="quanHeVoiNhanKhau"/>
+        </Method>
+        <Method name="getNgheNghiep" returnType="String" visibility="public"/>
+        <Method name="setNgheNghiep" returnType="void" visibility="public">
+          <Argument type="String" name="ngheNghiep"/>
+        </Method>
+        <Method name="getDiaChiHienTai" returnType="String" visibility="public"/>
+        <Method name="setDiaChiHienTai" returnType="void" visibility="public">
+          <Argument type="String" name="diaChiHienTai"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="HoKhauModel" package="models" visibility="public" xPosition="4303.0" yPosition="325.0">
+      <Fields>
+        <Field name="ID" type="int" visibility="private"/>
+        <Field name="maHoKhau" type="String" visibility="private"/>
+        <Field name="idChuHo" type="int" visibility="private"/>
+        <Field name="maKhuVuc" type="String" visibility="private"/>
+        <Field name="diaChi" type="String" visibility="private"/>
+        <Field name="ngayLap" type="Date" visibility="private"/>
+        <Field name="ngayChuyDi" type="Date" visibility="private"/>
+        <Field name="lyDoChuyen" type="String" visibility="private"/>
+        <Field name="nguoiThucHien" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getID" returnType="int" visibility="public"/>
+        <Method name="setID" returnType="void" visibility="public">
+          <Argument type="int" name="ID"/>
+        </Method>
+        <Method name="getMaHoKhau" returnType="String" visibility="public"/>
+        <Method name="setMaHoKhau" returnType="void" visibility="public">
+          <Argument type="String" name="maHoKhau"/>
+        </Method>
+        <Method name="getIdChuHo" returnType="int" visibility="public"/>
+        <Method name="setIdChuHo" returnType="void" visibility="public">
+          <Argument type="int" name="idChuHo"/>
+        </Method>
+        <Method name="getMaKhuVuc" returnType="String" visibility="public"/>
+        <Method name="setMaKhuVuc" returnType="void" visibility="public">
+          <Argument type="String" name="maKhuVuc"/>
+        </Method>
+        <Method name="getDiaChi" returnType="String" visibility="public"/>
+        <Method name="setDiaChi" returnType="void" visibility="public">
+          <Argument type="String" name="diaChi"/>
+        </Method>
+        <Method name="getNgayLap" returnType="Date" visibility="public"/>
+        <Method name="setNgayLap" returnType="void" visibility="public">
+          <Argument type="Date" name="ngayLap"/>
+        </Method>
+        <Method name="getNgayChuyDi" returnType="Date" visibility="public"/>
+        <Method name="setNgayChuyDi" returnType="void" visibility="public">
+          <Argument type="Date" name="ngayChuyDi"/>
+        </Method>
+        <Method name="getLyDoChuyen" returnType="String" visibility="public"/>
+        <Method name="setLyDoChuyen" returnType="void" visibility="public">
+          <Argument type="String" name="lyDoChuyen"/>
+        </Method>
+        <Method name="getNguoiThucHien" returnType="int" visibility="public"/>
+        <Method name="setNguoiThucHien" returnType="void" visibility="public">
+          <Argument type="int" name="nguoiThucHien"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="KhaiTuModel" package="models" visibility="public" xPosition="20.0" yPosition="1220.0">
+      <Fields>
+        <Field name="ID" type="int" visibility="private"/>
+        <Field name="soGiayKhaiTu" type="String" visibility="private"/>
+        <Field name="idNguoiKhai" type="int" visibility="private"/>
+        <Field name="idNguoiChet" type="int" visibility="private"/>
+        <Field name="ngayKhai" type="Date" visibility="private"/>
+        <Field name="ngayChet" type="Date" visibility="private"/>
+        <Field name="lyDoChet" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getID" returnType="int" visibility="public"/>
+        <Method name="setID" returnType="void" visibility="public">
+          <Argument type="int" name="ID"/>
+        </Method>
+        <Method name="getSoGiayKhaiTu" returnType="String" visibility="public"/>
+        <Method name="setSoGiayKhaiTu" returnType="void" visibility="public">
+          <Argument type="String" name="soGiayKhaiTu"/>
+        </Method>
+        <Method name="getIdNguoiKhai" returnType="int" visibility="public"/>
+        <Method name="setIdNguoiKhai" returnType="void" visibility="public">
+          <Argument type="int" name="idNguoiKhai"/>
+        </Method>
+        <Method name="getIdNguoiChet" returnType="int" visibility="public"/>
+        <Method name="setIdNguoiChet" returnType="void" visibility="public">
+          <Argument type="int" name="idNguoiChet"/>
+        </Method>
+        <Method name="getNgayKhai" returnType="Date" visibility="public"/>
+        <Method name="setNgayKhai" returnType="void" visibility="public">
+          <Argument type="Date" name="ngayKhai"/>
+        </Method>
+        <Method name="getNgayChet" returnType="Date" visibility="public"/>
+        <Method name="setNgayChet" returnType="void" visibility="public">
+          <Argument type="Date" name="ngayChet"/>
+        </Method>
+        <Method name="getLyDoChet" returnType="String" visibility="public"/>
+        <Method name="setLyDoChet" returnType="void" visibility="public">
+          <Argument type="String" name="lyDoChet"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="NhanKhauModel" package="models" visibility="public" xPosition="320.0" yPosition="1220.0">
+      <Fields>
+        <Field name="ID" type="int" visibility="private"/>
+        <Field name="maNhanKhau" type="String" visibility="private"/>
+        <Field name="hoTen" type="String" visibility="private"/>
+        <Field name="bietDanh" type="String" visibility="private"/>
+        <Field name="namSinh" type="Date" visibility="private"/>
+        <Field name="gioiTinh" type="String" visibility="private"/>
+        <Field name="noiSinh" type="String" visibility="private"/>
+        <Field name="nguyenQuan" type="String" visibility="private"/>
+        <Field name="danToc" type="String" visibility="private"/>
+        <Field name="tonGiao" type="String" visibility="private"/>
+        <Field name="quocTich" type="String" visibility="private"/>
+        <Field name="soHoChieu" type="String" visibility="private"/>
+        <Field name="noiThuongTru" type="String" visibility="private"/>
+        <Field name="diaChiHienNay" type="String" visibility="private"/>
+        <Field name="trinhDoHocVan" type="String" visibility="private"/>
+        <Field name="trinhDoChuyenMon" type="String" visibility="private"/>
+        <Field name="bietTiengDanToc" type="String" visibility="private"/>
+        <Field name="trinhDoNgoaiNgu" type="String" visibility="private"/>
+        <Field name="ngheNghiep" type="String" visibility="private"/>
+        <Field name="noiLamViec" type="String" visibility="private"/>
+        <Field name="tienAn" type="String" visibility="private"/>
+        <Field name="ngayChuyenDen" type="Date" visibility="private"/>
+        <Field name="lyDoChuyenDen" type="String" visibility="private"/>
+        <Field name="ngayChuyenDi" type="Date" visibility="private"/>
+        <Field name="lyDoChuyenDi" type="String" visibility="private"/>
+        <Field name="diaChiMoi" type="String" visibility="private"/>
+        <Field name="ngayTao" type="Date" visibility="private"/>
+        <Field name="idNguoiTao" type="int" visibility="private"/>
+        <Field name="ngayXoa" type="Date" visibility="private"/>
+        <Field name="idNguoiXoa" type="int" visibility="private"/>
+        <Field name="lyDoXoa" type="String" visibility="private"/>
+        <Field name="ghiChu" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getID" returnType="int" visibility="public"/>
+        <Method name="setID" returnType="void" visibility="public">
+          <Argument type="int" name="ID"/>
+        </Method>
+        <Method name="getMaNhanKhau" returnType="String" visibility="public"/>
+        <Method name="setMaNhanKhau" returnType="void" visibility="public">
+          <Argument type="String" name="maNhanKhau"/>
+        </Method>
+        <Method name="getHoTen" returnType="String" visibility="public"/>
+        <Method name="setHoTen" returnType="void" visibility="public">
+          <Argument type="String" name="hoTen"/>
+        </Method>
+        <Method name="getBietDanh" returnType="String" visibility="public"/>
+        <Method name="setBietDanh" returnType="void" visibility="public">
+          <Argument type="String" name="bietDanh"/>
+        </Method>
+        <Method name="getNamSinh" returnType="Date" visibility="public"/>
+        <Method name="setNamSinh" returnType="void" visibility="public">
+          <Argument type="Date" name="namSinh"/>
+        </Method>
+        <Method name="getGioiTinh" returnType="String" visibility="public"/>
+        <Method name="setGioiTinh" returnType="void" visibility="public">
+          <Argument type="String" name="gioiTinh"/>
+        </Method>
+        <Method name="getNoiSinh" returnType="String" visibility="public"/>
+        <Method name="setNoiSinh" returnType="void" visibility="public">
+          <Argument type="String" name="noiSinh"/>
+        </Method>
+        <Method name="getNguyenQuan" returnType="String" visibility="public"/>
+        <Method name="setNguyenQuan" returnType="void" visibility="public">
+          <Argument type="String" name="nguyenQuan"/>
+        </Method>
+        <Method name="getDanToc" returnType="String" visibility="public"/>
+        <Method name="setDanToc" returnType="void" visibility="public">
+          <Argument type="String" name="danToc"/>
+        </Method>
+        <Method name="getTonGiao" returnType="String" visibility="public"/>
+        <Method name="setTonGiao" returnType="void" visibility="public">
+          <Argument type="String" name="tonGiao"/>
+        </Method>
+        <Method name="getQuocTich" returnType="String" visibility="public"/>
+        <Method name="setQuocTich" returnType="void" visibility="public">
+          <Argument type="String" name="quocTich"/>
+        </Method>
+        <Method name="getSoHoChieu" returnType="String" visibility="public"/>
+        <Method name="setSoHoChieu" returnType="void" visibility="public">
+          <Argument type="String" name="soHoChieu"/>
+        </Method>
+        <Method name="getNoiThuongTru" returnType="String" visibility="public"/>
+        <Method name="setNoiThuongTru" returnType="void" visibility="public">
+          <Argument type="String" name="noiThuongTru"/>
+        </Method>
+        <Method name="getDiaChiHienNay" returnType="String" visibility="public"/>
+        <Method name="setDiaChiHienNay" returnType="void" visibility="public">
+          <Argument type="String" name="diaChiHienNay"/>
+        </Method>
+        <Method name="getTrinhDoHocVan" returnType="String" visibility="public"/>
+        <Method name="setTrinhDoHocVan" returnType="void" visibility="public">
+          <Argument type="String" name="trinhDoHocVan"/>
+        </Method>
+        <Method name="getTrinhDoChuyenMon" returnType="String" visibility="public"/>
+        <Method name="setTrinhDoChuyenMon" returnType="void" visibility="public">
+          <Argument type="String" name="trinhDoChuyenMon"/>
+        </Method>
+        <Method name="getBietTiengDanToc" returnType="String" visibility="public"/>
+        <Method name="setBietTiengDanToc" returnType="void" visibility="public">
+          <Argument type="String" name="bietTiengDanToc"/>
+        </Method>
+        <Method name="getTrinhDoNgoaiNgu" returnType="String" visibility="public"/>
+        <Method name="setTrinhDoNgoaiNgu" returnType="void" visibility="public">
+          <Argument type="String" name="trinhDoNgoaiNgu"/>
+        </Method>
+        <Method name="getNgheNghiep" returnType="String" visibility="public"/>
+        <Method name="setNgheNghiep" returnType="void" visibility="public">
+          <Argument type="String" name="ngheNghiep"/>
+        </Method>
+        <Method name="getNoiLamViec" returnType="String" visibility="public"/>
+        <Method name="setNoiLamViec" returnType="void" visibility="public">
+          <Argument type="String" name="noiLamViec"/>
+        </Method>
+        <Method name="getTienAn" returnType="String" visibility="public"/>
+        <Method name="setTienAn" returnType="void" visibility="public">
+          <Argument type="String" name="tienAn"/>
+        </Method>
+        <Method name="getNgayChuyenDen" returnType="Date" visibility="public"/>
+        <Method name="setNgayChuyenDen" returnType="void" visibility="public">
+          <Argument type="Date" name="ngayChuyenDen"/>
+        </Method>
+        <Method name="getLyDoChuyenDen" returnType="String" visibility="public"/>
+        <Method name="setLyDoChuyenDen" returnType="void" visibility="public">
+          <Argument type="String" name="lyDoChuyenDen"/>
+        </Method>
+        <Method name="getNgayChuyenDi" returnType="Date" visibility="public"/>
+        <Method name="setNgayChuyenDi" returnType="void" visibility="public">
+          <Argument type="Date" name="ngayChuyenDi"/>
+        </Method>
+        <Method name="getLyDoChuyenDi" returnType="String" visibility="public"/>
+        <Method name="setLyDoChuyenDi" returnType="void" visibility="public">
+          <Argument type="String" name="lyDoChuyenDi"/>
+        </Method>
+        <Method name="getDiaChiMoi" returnType="String" visibility="public"/>
+        <Method name="setDiaChiMoi" returnType="void" visibility="public">
+          <Argument type="String" name="diaChiMoi"/>
+        </Method>
+        <Method name="getNgayTao" returnType="Date" visibility="public"/>
+        <Method name="setNgayTao" returnType="void" visibility="public">
+          <Argument type="Date" name="ngayTao"/>
+        </Method>
+        <Method name="getIdNguoiTao" returnType="int" visibility="public"/>
+        <Method name="setIdNguoiTao" returnType="void" visibility="public">
+          <Argument type="int" name="idNguoiTao"/>
+        </Method>
+        <Method name="getNgayXoa" returnType="Date" visibility="public"/>
+        <Method name="setNgayXoa" returnType="void" visibility="public">
+          <Argument type="Date" name="ngayXoa"/>
+        </Method>
+        <Method name="getIdNguoiXoa" returnType="int" visibility="public"/>
+        <Method name="setIdNguoiXoa" returnType="void" visibility="public">
+          <Argument type="int" name="idNguoiXoa"/>
+        </Method>
+        <Method name="getLyDoXoa" returnType="String" visibility="public"/>
+        <Method name="setLyDoXoa" returnType="void" visibility="public">
+          <Argument type="String" name="lyDoXoa"/>
+        </Method>
+        <Method name="getGhiChu" returnType="String" visibility="public"/>
+        <Method name="setGhiChu" returnType="void" visibility="public">
+          <Argument type="String" name="ghiChu"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TamTruModel" package="models" visibility="public" xPosition="620.0" yPosition="1220.0">
+      <Fields>
+        <Field name="ID" type="int" visibility="private"/>
+        <Field name="idNhanKhau" type="int" visibility="private"/>
+        <Field name="maGiayTamTru" type="String" visibility="private"/>
+        <Field name="soDienThoaiNguoiDangKy" type="String" visibility="private"/>
+        <Field name="tuNgay" type="Date" visibility="private"/>
+        <Field name="denNgay" type="Date" visibility="private"/>
+        <Field name="lyDo" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getID" returnType="int" visibility="public"/>
+        <Method name="setID" returnType="void" visibility="public">
+          <Argument type="int" name="ID"/>
+        </Method>
+        <Method name="getIdNhanKhau" returnType="int" visibility="public"/>
+        <Method name="setIdNhanKhau" returnType="void" visibility="public">
+          <Argument type="int" name="idNhanKhau"/>
+        </Method>
+        <Method name="getMaGiayTamTru" returnType="String" visibility="public"/>
+        <Method name="setMaGiayTamTru" returnType="void" visibility="public">
+          <Argument type="String" name="maGiayTamTru"/>
+        </Method>
+        <Method name="getSoDienThoaiNguoiDangKy" returnType="String" visibility="public"/>
+        <Method name="setSoDienThoaiNguoiDangKy" returnType="void" visibility="public">
+          <Argument type="String" name="soDienThoaiNguoiDangKy"/>
+        </Method>
+        <Method name="getTuNgay" returnType="Date" visibility="public"/>
+        <Method name="setTuNgay" returnType="void" visibility="public">
+          <Argument type="Date" name="tuNgay"/>
+        </Method>
+        <Method name="getDenNgay" returnType="Date" visibility="public"/>
+        <Method name="setDenNgay" returnType="void" visibility="public">
+          <Argument type="Date" name="denNgay"/>
+        </Method>
+        <Method name="getLyDo" returnType="String" visibility="public"/>
+        <Method name="setLyDo" returnType="void" visibility="public">
+          <Argument type="String" name="lyDo"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TamVangModel" package="models" visibility="public" xPosition="920.0" yPosition="1220.0">
+      <Fields>
+        <Field name="ID" type="int" visibility="private"/>
+        <Field name="idNhanKhau" type="int" visibility="private"/>
+        <Field name="maGiayTamVang" type="String" visibility="private"/>
+        <Field name="noiTamTru" type="String" visibility="private"/>
+        <Field name="tuNgay" type="Date" visibility="private"/>
+        <Field name="denNgay" type="Date" visibility="private"/>
+        <Field name="lyDo" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getID" returnType="int" visibility="public"/>
+        <Method name="setID" returnType="void" visibility="public">
+          <Argument type="int" name="ID"/>
+        </Method>
+        <Method name="getIdNhanKhau" returnType="int" visibility="public"/>
+        <Method name="setIdNhanKhau" returnType="void" visibility="public">
+          <Argument type="int" name="idNhanKhau"/>
+        </Method>
+        <Method name="getMaGiayTamVang" returnType="String" visibility="public"/>
+        <Method name="setMaGiayTamVang" returnType="void" visibility="public">
+          <Argument type="String" name="maGiayTamVang"/>
+        </Method>
+        <Method name="getNoiTamTru" returnType="String" visibility="public"/>
+        <Method name="setNoiTamTru" returnType="void" visibility="public">
+          <Argument type="String" name="noiTamTru"/>
+        </Method>
+        <Method name="getTuNgay" returnType="Date" visibility="public"/>
+        <Method name="setTuNgay" returnType="void" visibility="public">
+          <Argument type="Date" name="tuNgay"/>
+        </Method>
+        <Method name="getDenNgay" returnType="Date" visibility="public"/>
+        <Method name="setDenNgay" returnType="void" visibility="public">
+          <Argument type="Date" name="denNgay"/>
+        </Method>
+        <Method name="getLyDo" returnType="String" visibility="public"/>
+        <Method name="setLyDo" returnType="void" visibility="public">
+          <Argument type="String" name="lyDo"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ThanhVienCuaHoModel" package="models" visibility="public" xPosition="1220.0" yPosition="1220.0">
+      <Fields>
+        <Field name="idNhanKhau" type="int" visibility="private"/>
+        <Field name="idHoKhau" type="int" visibility="private"/>
+        <Field name="quanHeVoiChuHo" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getIdNhanKhau" returnType="int" visibility="public"/>
+        <Method name="setIdNhanKhau" returnType="void" visibility="public">
+          <Argument type="int" name="idNhanKhau"/>
+        </Method>
+        <Method name="getIdHoKhau" returnType="int" visibility="public"/>
+        <Method name="setIdHoKhau" returnType="void" visibility="public">
+          <Argument type="int" name="idHoKhau"/>
+        </Method>
+        <Method name="getQuanHeVoiChuHo" returnType="String" visibility="public"/>
+        <Method name="setQuanHeVoiChuHo" returnType="void" visibility="public">
+          <Argument type="String" name="quanHeVoiChuHo"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TieuSuModel" package="models" visibility="public" xPosition="1520.0" yPosition="1220.0">
+      <Fields>
+        <Field name="ID" type="int" visibility="private"/>
+        <Field name="idNhanKhau" type="int" visibility="private"/>
+        <Field name="tuNgay" type="Date" visibility="private"/>
+        <Field name="denNgay" type="Date" visibility="private"/>
+        <Field name="diaChi" type="String" visibility="private"/>
+        <Field name="ngheNghiep" type="String" visibility="private"/>
+        <Field name="noiLamViec" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getID" returnType="int" visibility="public"/>
+        <Method name="setID" returnType="void" visibility="public">
+          <Argument type="int" name="ID"/>
+        </Method>
+        <Method name="getIdNhanKhau" returnType="int" visibility="public"/>
+        <Method name="setIdNhanKhau" returnType="void" visibility="public">
+          <Argument type="int" name="idNhanKhau"/>
+        </Method>
+        <Method name="getTuNgay" returnType="Date" visibility="public"/>
+        <Method name="setTuNgay" returnType="void" visibility="public">
+          <Argument type="Date" name="tuNgay"/>
+        </Method>
+        <Method name="getDenNgay" returnType="Date" visibility="public"/>
+        <Method name="setDenNgay" returnType="void" visibility="public">
+          <Argument type="Date" name="denNgay"/>
+        </Method>
+        <Method name="getDiaChi" returnType="String" visibility="public"/>
+        <Method name="setDiaChi" returnType="void" visibility="public">
+          <Argument type="String" name="diaChi"/>
+        </Method>
+        <Method name="getNgheNghiep" returnType="String" visibility="public"/>
+        <Method name="setNgheNghiep" returnType="void" visibility="public">
+          <Argument type="String" name="ngheNghiep"/>
+        </Method>
+        <Method name="getNoiLamViec" returnType="String" visibility="public"/>
+        <Method name="setNoiLamViec" returnType="void" visibility="public">
+          <Argument type="String" name="noiLamViec"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="UserMoldel" package="models" visibility="public" xPosition="1820.0" yPosition="1220.0">
+      <Fields>
+        <Field name="ID" type="int" visibility="private"/>
+        <Field name="userName" type="String" visibility="private"/>
+        <Field name="passwd" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getID" returnType="int" visibility="public"/>
+        <Method name="setID" returnType="void" visibility="public">
+          <Argument type="int" name="ID"/>
+        </Method>
+        <Method name="getPasswd" returnType="String" visibility="public"/>
+        <Method name="setPasswd" returnType="void" visibility="public">
+          <Argument type="String" name="passwd"/>
+        </Method>
+        <Method name="getUserName" returnType="String" visibility="public"/>
+        <Method name="setUserName" returnType="void" visibility="public">
+          <Argument type="String" name="userName"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="QuanLyNhanKhau" package="quanlynhankhau" visibility="public" xPosition="2120.0" yPosition="1220.0">
+      <Fields>
+        <Field name="calendar" type="Calendar" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="HoKhauService" package="services" visibility="public" xPosition="20.0" yPosition="1620.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="addNew" returnType="boolean" visibility="public">
+          <Argument type="HoKhauBean" name="hoKhauBean"/>
+        </Method>
+        <Method name="checkPerson" returnType="boolean" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getListHoKhau" returnType="List&lt;HoKhauBean&gt;" visibility="public"/>
+        <Method name="search" returnType="List&lt;HoKhauBean&gt;" visibility="public">
+          <Argument type="String" name="key"/>
+        </Method>
+        <Method name="tachHoKhau" returnType="void" visibility="public">
+          <Argument type="HoKhauBean" name="hoKhauBean"/>
+        </Method>
+        <Method name="chuyenDi" returnType="void" visibility="public">
+          <Argument type="int" name="idhoKhau"/>
+          <Argument type="String" name="noiChuyenDen"/>
+          <Argument type="String" name="lyDoChuyen"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MysqlConnection" package="services" visibility="public" xPosition="320.0" yPosition="1620.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getMysqlConnection" returnType="Connection" visibility="public" isStatic="true"/>
+        <Method name="getMysqlConnection" returnType="Connection" visibility="public" isStatic="true">
+          <Argument type="String" name="hostName"/>
+          <Argument type="String" name="dbName"/>
+          <Argument type="String" name="userName"/>
+          <Argument type="String" name="password"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="NhanKhauService" package="services" visibility="public" xPosition="620.0" yPosition="1620.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getNhanKhau" returnType="NhanKhauBean" visibility="public">
+          <Argument type="String" name="cmt"/>
+        </Method>
+        <Method name="getListNhanKhau" returnType="List&lt;NhanKhauBean&gt;" visibility="public"/>
+        <Method name="statisticNhanKhau" returnType="List&lt;NhanKhauBean&gt;" visibility="public">
+          <Argument type="int" name="TuTuoi"/>
+          <Argument type="int" name="denTuoi"/>
+          <Argument type="String" name="gender"/>
+          <Argument type="String" name="Status"/>
+          <Argument type="int" name="tuNam"/>
+          <Argument type="int" name="denNam"/>
+        </Method>
+        <Method name="search" returnType="List&lt;NhanKhauBean&gt;" visibility="public">
+          <Argument type="String" name="keyword"/>
+        </Method>
+        <Method name="exceptionHandle" returnType="void" visibility="private">
+          <Argument type="String" name="message"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="StringService" package="services" visibility="public" xPosition="920.0" yPosition="1620.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="covertToString" returnType="String" visibility="public" isStatic="true">
+          <Argument type="String" name="value"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ClassTableModel" package="utility" visibility="public" xPosition="1220.0" yPosition="1620.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="setTableNhanKhau" returnType="DefaultTableModel" visibility="public">
+          <Argument type="List&lt;NhanKhauModel&gt;" name="listItem"/>
+          <Argument type="String[]" name="listColumn"/>
+        </Method>
+        <Method name="setTableTieuSu" returnType="DefaultTableModel" visibility="public">
+          <Argument type="List&lt;TieuSuModel&gt;" name="tieuSu"/>
+          <Argument type="String[]" name="listColumn"/>
+        </Method>
+        <Method name="setTableGiaDinh" returnType="DefaultTableModel" visibility="public">
+          <Argument type="List&lt;GiaDinhModel&gt;" name="giaDinh"/>
+          <Argument type="String[]" name="listColumn"/>
+        </Method>
+        <Method name="setTableHoKhau" returnType="DefaultTableModel" visibility="public">
+          <Argument type="List&lt;HoKhauBean&gt;" name="listItem"/>
+          <Argument type="String[]" name="listColumn"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TableModelHoKhau" package="utility" visibility="public" xPosition="1520.0" yPosition="1620.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="setTableNhanKhau" returnType="DefaultTableModel" visibility="public">
+          <Argument type="List&lt;NhanKhauBean&gt;" name="listItem"/>
+          <Argument type="String[]" name="listColumn"/>
+        </Method>
+        <Method name="setTableMember" returnType="DefaultTableModel" visibility="public">
+          <Argument type="List&lt;MemOfFamily&gt;" name="listItem"/>
+          <Argument type="String[]" name="listColumn"/>
+        </Method>
+        <Method name="setTableHoKhau" returnType="DefaultTableModel" visibility="public">
+          <Argument type="List&lt;HoKhauBean&gt;" name="listItem"/>
+          <Argument type="String[]" name="listColumn"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="HoKhauManagePanel" package="views" visibility="public" xPosition="1820.0" yPosition="1620.0">
+      <Fields>
+        <Field name="parentFrame" type="JFrame" visibility="private"/>
+        <Field name="controller" type="HoKhauPanelController" visibility="private"/>
+        <Field name="chuyenDiBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jtfSearch" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tableJpn" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="tachHoKhauBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="themMoiBtn" type="javax.swing.JButton" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JFrame" name="parentFrame"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jtfSearchActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="chuyenDiBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="themMoiBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="tachHoKhauBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ChangeListPeopleJframe" package="views.HoKhauManagerFrame" visibility="public" xPosition="2120.0" yPosition="1620.0">
+      <Fields>
+        <Field name="listMember" type="List&lt;MemOfFamily&gt;" visibility="private"/>
+        <Field name="listMemberTemp" type="List&lt;MemOfFamily&gt;" visibility="private"/>
+        <Field name="controller" type="ChangeListPeopleController" visibility="private"/>
+        <Field name="parentJframe" type="JFrame" visibility="private"/>
+        <Field name="MemTableJpn" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="PeopleTableJpn" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="addBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jTextField1" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="removeBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="saveBtn" type="javax.swing.JButton" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="List&lt;MemOfFamily&gt;" name="listMember"/>
+          <Argument type="JFrame" name="parentJFrame"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="close" returnType="void" visibility="private"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="saveBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ChoosePeople" package="views.HoKhauManagerFrame" visibility="public" xPosition="20.0" yPosition="2020.0">
+      <Fields>
+        <Field name="nhanKhauBean" type="NhanKhauBean" visibility="private"/>
+        <Field name="nhanKhauBeanTemp" type="NhanKhauBean" visibility="private"/>
+        <Field name="parentJFrame" type="JFrame" visibility="private"/>
+        <Field name="controller" type="ChoosePeopleController" visibility="private" isFinal="true"/>
+        <Field name="cancelBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="confirmBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="searchJtf" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="selectedJtf" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tableJpn" type="javax.swing.JPanel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="NhanKhauBean" name="nhanKhauBean"/>
+          <Argument type="JFrame" name="parentJframe"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="Close" returnType="void" visibility="public"/>
+        <Method name="getNhanKhauBean" returnType="NhanKhauBean" visibility="public"/>
+        <Method name="setNhanKhauBean" returnType="void" visibility="public">
+          <Argument type="NhanKhauBean" name="nhanKhauBean"/>
+        </Method>
+        <Method name="getParentJFrame" returnType="JFrame" visibility="public"/>
+        <Method name="setParentJFrame" returnType="void" visibility="public">
+          <Argument type="JFrame" name="parentJFrame"/>
+        </Method>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="cancelBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="confirmBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ChuyenDiNoiKhac" package="views.HoKhauManagerFrame" visibility="public" xPosition="320.0" yPosition="2020.0">
+      <Fields>
+        <Field name="controller" type="ChuyenDiNoiKhacController" visibility="private"/>
+        <Field name="hoKhauBean" type="HoKhauBean" visibility="private"/>
+        <Field name="parentJFrame" type="JFrame" visibility="private"/>
+        <Field name="cancelBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="confirmBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="diaChiChuyenDenJtf" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="diaChiHienTaiJtf" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel10" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel11" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel12" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel13" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel14" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel15" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel16" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel17" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel18" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel9" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel2" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jScrollPane2" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="lyDoJta" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="maHoKhauJtf" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="maKhuVucJtf" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="searchJtf" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tableJpn" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="tenChuHoJtf" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JFrame" name="parentJFrame"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="close" returnType="void" visibility="private"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="cancelBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="confirmBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TachHoKhau" package="views.HoKhauManagerFrame" visibility="public" xPosition="620.0" yPosition="2020.0">
+      <Fields>
+        <Field name="controller" type="TachHoKhauController" visibility="private"/>
+        <Field name="parentJFrame" type="JFrame" visibility="private"/>
+        <Field name="acceptBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="addBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="cancelBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="chuHoHienTaiJtf" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="chuHoMoiJtf" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="diaChiJtf" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel12" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel13" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel14" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel15" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel16" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel17" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel18" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel2" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="maHoKhauMoiJtf" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="maKhuVucJtf" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="removeBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="searchJtf" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tableBotJpn" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="tableRigthJtf" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="tableTopJpn" type="javax.swing.JPanel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JFrame" name="parentJFrame"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="close" returnType="void" visibility="public"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="cancelBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="acceptBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="getParentJFrame" returnType="JFrame" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ThemMoiHoKhau" package="views.HoKhauManagerFrame" visibility="public" xPosition="920.0" yPosition="2020.0">
+      <Fields>
+        <Field name="parentJFrame" type="JFrame" visibility="private"/>
+        <Field name="chuHo" type="NhanKhauBean" visibility="private"/>
+        <Field name="list" type="List&lt;MemOfFamily&gt;" visibility="private" isFinal="true"/>
+        <Field name="controller" type="ThemMoiController" visibility="private" isFinal="true"/>
+        <Field name="hoKhauBean" type="HoKhauBean" visibility="private" isFinal="true"/>
+        <Field name="cancelBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="diaChiJtf" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="editBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel10" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel11" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel12" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel8" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel9" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel2" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="maHoKhauJtf" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="maKhuVucJtf" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="memTableJpn" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="ngaySinhChuHoJtf" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="saveBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="selectBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="soCMTChuHo" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tenChuHoJtf" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JFrame" name="parentJFrame"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="close" returnType="void" visibility="private"/>
+        <Method name="setDataChuHo" returnType="void" visibility="public"/>
+        <Method name="setDataThanhVien" returnType="void" visibility="public"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="maHoKhauJtfActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="maKhuVucJtfActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="diaChiJtfActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="selectBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="tenChuHoJtfActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="ngaySinhChuHoJtfActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="soCMTChuHoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="cancelBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="editBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="saveBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="HomePagePanel" package="views" visibility="public" xPosition="1220.0" yPosition="2020.0">
+      <Fields>
+        <Field name="cotroller" type="HomeCotroller" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel10" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel11" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel8" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel2" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel3" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel4" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel5" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel6" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel7" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel8" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="nhanKhauTamTruLb" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="nhanKhauTamVangLb" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="tongHoKhauLb" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="tongNhanKhauLb" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="InfoJframe" package="views.infoViews" visibility="public" xPosition="1520.0" yPosition="2020.0">
+      <Fields>
+        <Field name="content" type="String" visibility="private"/>
+        <Field name="parentJFrame" type="JFrame" visibility="private"/>
+        <Field name="contentJlb" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="content"/>
+          <Argument type="JFrame" name="parentJFrame"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="close" returnType="void" visibility="public"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="getContent" returnType="String" visibility="public"/>
+        <Method name="setContent" returnType="void" visibility="public">
+          <Argument type="String" name="content"/>
+        </Method>
+        <Method name="getjPanel1" returnType="JPanel" visibility="public"/>
+        <Method name="setjPanel1" returnType="void" visibility="public">
+          <Argument type="JPanel" name="jPanel1"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="LoginUI" package="views" visibility="public" xPosition="1820.0" yPosition="2020.0">
+      <Fields>
+        <Field name="cont" type="LoginController" visibility="private"/>
+        <Field name="btnLogin" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel2" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jpnLogin" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="txbPasswd" type="javax.swing.JPasswordField" visibility="private"/>
+        <Field name="txbUserName" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="keyListenner" returnType="void" visibility="private">
+          <Argument type="JTextField" name="jtf"/>
+        </Method>
+        <Method name="login" returnType="void" visibility="private"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="txbUserNameActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnLoginActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="btnLoginMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MainFrame" package="views" visibility="public" xPosition="2120.0" yPosition="2020.0">
+      <Fields>
+        <Field name="HoKhauBtn" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="Home" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="NhanKhauBtn" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="ThongKeBtn" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jblTrangChu" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jlbHoKhau" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jlbNhanKhau" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jlbThongKe" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jpnBean" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jpnContainer" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jpnMenu" type="javax.swing.JPanel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="NhanKhauManagePanel" package="views" visibility="public" xPosition="20.0" yPosition="2420.0">
+      <Fields>
+        <Field name="controller" type="NhanKhauManagerPanelController" visibility="private"/>
+        <Field name="parentJFrame" type="JFrame" visibility="private"/>
+        <Field name="addNewBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jtfSearch" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="khaiTuBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="tablePanel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="tamTruBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="tamVangBtn" type="javax.swing.JButton" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JFrame" name="parentFrame"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="addNewBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="tamVangBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="tamTruBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="khaiTuBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jtfSearchActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="AddNewPeopleJFrame" package="views.NhanKhauManagerFrame" visibility="public" xPosition="320.0" yPosition="2420.0">
+      <Fields>
+        <Field name="parentController" type="NhanKhauManagerPanelController" visibility="private"/>
+        <Field name="parentFrame" type="JFrame" visibility="private"/>
+        <Field name="nhanKhauBean" type="NhanKhauBean" visibility="private"/>
+        <Field name="controller" type="AddNewController" visibility="private"/>
+        <Field name="CancelBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="CreateBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="bietDanhTxb" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="bietTiengDanTocTxb" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="danTocTxb" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="diaChiHienNayTxb" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="gioiTinhCbb" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="hoTenTxb" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel10" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel11" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel12" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel13" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel14" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel15" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel16" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel17" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel19" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel20" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel21" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel22" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel23" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel24" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel25" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel26" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel27" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel28" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel29" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel30" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel31" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel32" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel33" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel34" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel8" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel9" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="namSinhDateC" type="com.toedter.calendar.JDateChooser" visibility="private"/>
+        <Field name="ngheNghiepTxb" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="nguyenQuanTxb" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="noiLamViecTxb" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="noiThuongTruTxb" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="quocTichTxb" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="soCMTTxb" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="soHoChieuTxb" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tonGiaoTxb" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="trinhDoChuyenMonTxb" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="trinhDoHocVanTxb" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="trinhDoNgoaiNguTxb" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="NhanKhauManagerPanelController" name="parentController"/>
+          <Argument type="JFrame" name="parentJFrame"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="JFrame" name="parentJFrame"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="close" returnType="void" visibility="package"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="CreateBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="validateValueInForm" returnType="boolean" visibility="private"/>
+        <Method name="hoTenTxbActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="bietDanhTxbActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="nguyenQuanTxbActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="danTocTxbActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="soCMTTxbActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="CancelBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="gioiTinhCbbActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="tonGiaoTxbActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="quocTichTxbActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="soHoChieuTxbActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="noiThuongTruTxbActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="diaChiHienNayTxbActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="trinhDoHocVanTxbActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="trinhDoChuyenMonTxbActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="trinhDoNgoaiNguTxbActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="bietTiengDanTocTxbActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="ngheNghiepTxbActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="noiLamViecTxbActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="DangKyTamTruJFrame" package="views.NhanKhauManagerFrame" visibility="public" xPosition="620.0" yPosition="2420.0">
+      <Fields>
+        <Field name="parentFrame" type="JFrame" visibility="private"/>
+        <Field name="controller" type="DangKyTamTruController" visibility="private"/>
+        <Field name="tamTruModel" type="TamTruModel" visibility="private"/>
+        <Field name="acceptBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="availableIcon" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="cancelBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="checkBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="denNgayDc" type="com.toedter.calendar.JDateChooser" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel10" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel11" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel8" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel9" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="lyDoTar" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="maGiayTamTruJtf" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="soCmtJtf" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="soDienThoaiJtf" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tuNgayDc" type="com.toedter.calendar.JDateChooser" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="JFrame" name="parentFrame"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="close" returnType="void" visibility="package"/>
+        <Method name="checkCMT" returnType="boolean" visibility="private">
+          <Argument type="String" name="cmt"/>
+        </Method>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="checkBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="maGiayTamTruJtfActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="soDienThoaiJtfActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="cancelBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="acceptBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="validateForm" returnType="boolean" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="DangKyTamVangJFrame" package="views.NhanKhauManagerFrame" visibility="public" xPosition="920.0" yPosition="2420.0">
+      <Fields>
+        <Field name="parentJFrame" type="JFrame" visibility="private"/>
+        <Field name="controller" type="DangKyTamVangController" visibility="private"/>
+        <Field name="tamVangModel" type="TamVangModel" visibility="private"/>
+        <Field name="CancelBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="acceptBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="availableIcon" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="checkBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="denNgayJdc" type="com.toedter.calendar.JDateChooser" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel10" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel11" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel12" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel8" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel9" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="lyDoJta" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="maGiayTamVangJtf" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="noiTamTruJtf" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="soCMTjtf" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tuNgayJdc" type="com.toedter.calendar.JDateChooser" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JFrame" name="parentJFrame"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="close" returnType="void" visibility="package"/>
+        <Method name="validateForm" returnType="boolean" visibility="private"/>
+        <Method name="checkCMT" returnType="void" visibility="private"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="soCMTjtfActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="maGiayTamVangJtfActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="noiTamTruJtfActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="acceptBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="CancelBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="checkBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="KhaiTuJFrame" package="views.NhanKhauManagerFrame" visibility="public" xPosition="1220.0" yPosition="2420.0">
+      <Fields>
+        <Field name="parentJFrame" type="JFrame" visibility="private"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton3" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton4" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jDateChooser1" type="com.toedter.calendar.JDateChooser" visibility="private"/>
+        <Field name="jDateChooser2" type="com.toedter.calendar.JDateChooser" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel8" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jTextArea1" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="jTextField1" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextField2" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextField3" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JFrame" name="parentJFrame"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="close" returnType="void" visibility="private"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jTextField2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton3ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton4ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TieuSuJFrame" package="views.NhanKhauManagerFrame" visibility="public" xPosition="1520.0" yPosition="2420.0">
+      <Fields>
+        <Field name="parentFrame" type="JFrame" visibility="private"/>
+        <Field name="nhanKhauBean" type="NhanKhauBean" visibility="private"/>
+        <Field name="controller" type="TieuSuController" visibility="private"/>
+        <Field name="acceptBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="cancelBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="giaDinhPanel" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="tieuSuPanel" type="javax.swing.JPanel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JFrame" name="parentFrame"/>
+          <Argument type="NhanKhauBean" name="nhanKhauBean"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="Close" returnType="void" visibility="public"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="cancelBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="acceptBtnActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ThongKePanel" package="views" visibility="public" xPosition="1820.0" yPosition="2420.0">
+      <Fields>
+        <Field name="parentFrame" type="JFrame" visibility="private"/>
+        <Field name="controller" type="ThongKePanelController" visibility="private"/>
+        <Field name="GenderChoose" type="javax.swing.ButtonGroup" visibility="private"/>
+        <Field name="GenderJcb" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="StatusJcb" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="denNamJtf" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="denTuoiJtf" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="getFileBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel10" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel11" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel9" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="statusChoose" type="javax.swing.ButtonGroup" visibility="private"/>
+        <Field name="tableJpn" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="tuNamJtf" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tuTuoiJtf" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JFrame" name="parentFrame"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TimKiemPanel" package="views" visibility="public" xPosition="2120.0" yPosition="2420.0">
+      <Fields>
+        <Field name="parentFrame" type="JFrame" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JFrame" name="parentFrame"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="controller" source="views.HoKhauManagerFrame.TachHoKhau" target="controllers.HoKhauManagerController.TachHoKhauController" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="controllers.HoKhauManagerController.ChuyenDiNoiKhacController" target="services.HoKhauService" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="controller" source="views.HoKhauManagerFrame.ChoosePeople" target="controllers.HoKhauManagerController.ChoosePeopleController" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="chuHo" source="views.HoKhauManagerFrame.ThemMoiHoKhau" target="Bean.NhanKhauBean" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="controllers.HoKhauPanelController" target="Bean.HoKhauBean" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="tableModelHoKhau" source="controllers.HoKhauManagerController.ChangeListPeopleController" target="utility.TableModelHoKhau" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="nhanKhauBeanTemp" source="views.HoKhauManagerFrame.ChoosePeople" target="Bean.NhanKhauBean" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="hoKhauService" source="controllers.HoKhauManagerController.ThemMoiController" target="services.HoKhauService" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="utility.ClassTableModel" target="models.NhanKhauModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="thanhVienCuaHoModel" source="Bean.MemOfFamily" target="models.ThanhVienCuaHoModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="listMemberTemp" source="views.HoKhauManagerFrame.ChangeListPeopleJframe" target="Bean.MemOfFamily" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;MemOfFamily&gt;"/>
+    <HasRelation name="hoKhauService" source="controllers.HoKhauManagerController.TachHoKhauController" target="services.HoKhauService" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="controllers.HoKhauManagerController.ChuyenDiNoiKhacController" target="Bean.HoKhauBean" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="controller" source="views.NhanKhauManagePanel" target="controllers.NhanKhauManagerPanelController" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="chuHo" source="controllers.HoKhauManagerController.ThemMoiController" target="Bean.NhanKhauBean" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Bean.HoKhauBean" target="models.NhanKhauModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="utility.ClassTableModel" target="Bean.HoKhauBean" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="tamTruModel" source="views.NhanKhauManagerFrame.DangKyTamTruJFrame" target="models.TamTruModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="controller" source="views.HoKhauManagerFrame.ThemMoiHoKhau" target="controllers.HoKhauManagerController.ThemMoiController" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="hoKhauBean" source="views.HoKhauManagerFrame.ThemMoiHoKhau" target="Bean.HoKhauBean" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="thanhVienSeclected" source="controllers.HoKhauManagerController.TachHoKhauController" target="Bean.MemOfFamily" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="list" source="controllers.HoKhauPanelController" target="Bean.HoKhauBean" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;HoKhauBean&gt;"/>
+    <HasRelation name="hoKhauModel" source="Bean.HoKhauBean" target="models.HoKhauModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="listMember" source="controllers.HoKhauManagerController.ChangeListPeopleController" target="Bean.MemOfFamily" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;MemOfFamily&gt;"/>
+    <HasRelation name="hoKhauMoi" source="controllers.HoKhauManagerController.TachHoKhauController" target="Bean.HoKhauBean" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="utility.TableModelHoKhau" target="Bean.NhanKhauBean" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="listNhanKhauModels" source="Bean.HoKhauBean" target="models.NhanKhauModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;NhanKhauModel&gt;"/>
+    <HasRelation name="nhanKhauBean" source="views.HoKhauManagerFrame.ChoosePeople" target="Bean.NhanKhauBean" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="controllers.HoKhauManagerController.ThemMoiController" target="Bean.MemOfFamily" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="nhanKhauBean" source="controllers.NhanKhauManagerController.TieuSuController" target="Bean.NhanKhauBean" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="controller" source="views.NhanKhauManagerFrame.DangKyTamTruJFrame" target="controllers.NhanKhauManagerController.DangKyTamTruController" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="controller" source="views.HoKhauManagerFrame.ChuyenDiNoiKhac" target="controllers.HoKhauManagerController.ChuyenDiNoiKhacController" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="hoKhauService" source="controllers.HoKhauManagerController.ChoosePeopleController" target="services.HoKhauService" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="classTableModel" source="controllers.NhanKhauManagerController.TieuSuController" target="utility.ClassTableModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="peopleSelected" source="controllers.HoKhauManagerController.ChangeListPeopleController" target="Bean.NhanKhauBean" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="nhanKhauService" source="controllers.NhanKhauManagerPanelController" target="services.NhanKhauService" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="hoKhauService" source="controllers.HoKhauPanelController" target="services.HoKhauService" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="controllers.HoKhauManagerController.ThemMoiController" target="Bean.HoKhauBean" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="controllers.NhanKhauManagerController.AddNewController" target="Bean.NhanKhauBean" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="memSelected" source="controllers.HoKhauManagerController.ChangeListPeopleController" target="Bean.MemOfFamily" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Bean.NhanKhauBean" target="models.NhanKhauModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="nhanKhauService" source="controllers.ThongKePanelController" target="services.NhanKhauService" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="hoKhauService" source="controllers.HoKhauManagerController.ChangeListPeopleController" target="services.HoKhauService" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="controller" source="views.NhanKhauManagerFrame.DangKyTamVangJFrame" target="controllers.NhanKhauManagerController.DangKyTamVangController" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="utility.ClassTableModel" target="models.TieuSuModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="controllers.MainController" target="Bean.DanhMucBean" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="cotroller" source="views.HomePagePanel" target="controllers.HomeCotroller" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="nhanKhauBean" source="views.NhanKhauManagerFrame.AddNewPeopleJFrame" target="Bean.NhanKhauBean" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Bean.HoKhauBean" target="models.ThanhVienCuaHoModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="thanhVienHoMoiSeclected" source="controllers.HoKhauManagerController.TachHoKhauController" target="Bean.MemOfFamily" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Bean.MemOfFamily" target="Bean.NhanKhauBean" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="nhanKhauModel" source="Bean.NhanKhauBean" target="models.NhanKhauModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Bean.NhanKhauBean" target="models.TieuSuModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="listNhanKhauBeans" source="controllers.ThongKePanelController" target="Bean.NhanKhauBean" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;NhanKhauBean&gt;"/>
+    <HasRelation name="tableModelHoKhau" source="controllers.HoKhauPanelController" target="utility.TableModelHoKhau" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="list" source="views.HoKhauManagerFrame.ThemMoiHoKhau" target="Bean.MemOfFamily" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;MemOfFamily&gt;"/>
+    <HasRelation name="list" source="controllers.HoKhauManagerController.ChoosePeopleController" target="Bean.NhanKhauBean" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;NhanKhauBean&gt;"/>
+    <HasRelation name="list" source="controllers.HoKhauManagerController.ChuyenDiNoiKhacController" target="Bean.HoKhauBean" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;HoKhauBean&gt;"/>
+    <UseRelation source="views.HoKhauManagerFrame.ChoosePeople" target="Bean.NhanKhauBean" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="classTableModel" source="controllers.ThongKePanelController" target="utility.ClassTableModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="tableModelHoKhau" source="controllers.HoKhauManagerController.TachHoKhauController" target="utility.TableModelHoKhau" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="currentUser" source="controllers.LoginController" target="models.UserMoldel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="listThanhVien" source="controllers.HoKhauManagerController.ThemMoiController" target="Bean.MemOfFamily" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;MemOfFamily&gt;"/>
+    <HasRelation name="nhanKhauBean" source="controllers.HoKhauManagerController.ChoosePeopleController" target="Bean.NhanKhauBean" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="utility.TableModelHoKhau" target="Bean.HoKhauBean" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Bean.HoKhauBean" target="models.HoKhauModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="listDanhMuc" source="controllers.MainController" target="Bean.DanhMucBean" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;DanhMucBean&gt;"/>
+    <HasRelation name="listThanhVienCuaHo" source="Bean.HoKhauBean" target="models.ThanhVienCuaHoModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;ThanhVienCuaHoModel&gt;"/>
+    <HasRelation name="listHoKhau" source="controllers.HoKhauManagerController.TachHoKhauController" target="Bean.HoKhauBean" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;HoKhauBean&gt;"/>
+    <HasRelation name="parentController" source="views.NhanKhauManagerFrame.AddNewPeopleJFrame" target="controllers.NhanKhauManagerPanelController" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="nhanKhauService" source="controllers.HoKhauManagerController.ChoosePeopleController" target="services.NhanKhauService" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="listTieuSuModels" source="Bean.NhanKhauBean" target="models.TieuSuModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;TieuSuModel&gt;"/>
+    <HasRelation name="tableModelHoKhau" source="controllers.HoKhauManagerController.ChoosePeopleController" target="utility.TableModelHoKhau" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Bean.NhanKhauBean" target="models.ChungMinhThuModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="utility.TableModelHoKhau" target="Bean.MemOfFamily" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="listNhanKhauBeans" source="controllers.NhanKhauManagerPanelController" target="Bean.NhanKhauBean" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;NhanKhauBean&gt;"/>
+    <UseRelation source="controllers.HoKhauManagerController.ChoosePeopleController" target="Bean.NhanKhauBean" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="listGiaDinhModels" source="Bean.NhanKhauBean" target="models.GiaDinhModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;GiaDinhModel&gt;"/>
+    <HasRelation name="nhanKhauBean" source="views.NhanKhauManagerFrame.TieuSuJFrame" target="Bean.NhanKhauBean" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="tableModelHoKhau" source="controllers.HoKhauManagerController.ThemMoiController" target="utility.TableModelHoKhau" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="listThanhVien" source="controllers.HoKhauManagerController.TachHoKhauController" target="Bean.MemOfFamily" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;MemOfFamily&gt;"/>
+    <HasRelation name="hoKhauBean" source="views.HoKhauManagerFrame.ChuyenDiNoiKhac" target="Bean.HoKhauBean" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="controller" source="views.NhanKhauManagerFrame.AddNewPeopleJFrame" target="controllers.NhanKhauManagerController.AddNewController" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="hoKhauBean" source="controllers.HoKhauManagerController.ChuyenDiNoiKhacController" target="Bean.HoKhauBean" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="nhanKhau" source="Bean.MemOfFamily" target="Bean.NhanKhauBean" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Bean.MemOfFamily" target="models.ThanhVienCuaHoModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="nhanKhauService" source="controllers.HoKhauManagerController.ChangeListPeopleController" target="services.NhanKhauService" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="utility.ClassTableModel" target="models.GiaDinhModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="services.NhanKhauService" target="Bean.NhanKhauBean" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="cont" source="views.LoginUI" target="controllers.LoginController" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="controllers.NhanKhauManagerController.DangKyTamVangController" target="models.TamVangModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="controller" source="views.NhanKhauManagerFrame.TieuSuJFrame" target="controllers.NhanKhauManagerController.TieuSuController" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="chungMinhThuModel" source="Bean.NhanKhauBean" target="models.ChungMinhThuModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="tamVangModel" source="views.NhanKhauManagerFrame.DangKyTamVangJFrame" target="models.TamVangModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="listThanhVienTrongHoMoi" source="controllers.HoKhauManagerController.TachHoKhauController" target="Bean.MemOfFamily" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;MemOfFamily&gt;"/>
+    <HasRelation name="tableModelHoKhau" source="controllers.HoKhauManagerController.ChuyenDiNoiKhacController" target="utility.TableModelHoKhau" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="controllers.NhanKhauManagerController.DangKyTamTruController" target="models.TamTruModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="listPeople" source="controllers.HoKhauManagerController.ChangeListPeopleController" target="Bean.NhanKhauBean" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;NhanKhauBean&gt;"/>
+    <UseRelation source="services.HoKhauService" target="Bean.HoKhauBean" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="controllers.NhanKhauManagerController.KhaiTuController" target="models.KhaiTuModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="hoKhauService" source="controllers.HoKhauManagerController.ChuyenDiNoiKhacController" target="services.HoKhauService" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="chuHo" source="Bean.HoKhauBean" target="models.NhanKhauModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="controller" source="views.HoKhauManagerFrame.ChangeListPeopleJframe" target="controllers.HoKhauManagerController.ChangeListPeopleController" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ChangeListPeopleController"/>
+    <UseRelation source="Bean.NhanKhauBean" target="models.GiaDinhModel" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="controller" source="views.HoKhauManagePanel" target="controllers.HoKhauPanelController" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="classTableModel" source="controllers.NhanKhauManagerPanelController" target="utility.ClassTableModel" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="controller" source="views.ThongKePanel" target="controllers.ThongKePanelController" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="listMember" source="views.HoKhauManagerFrame.ChangeListPeopleJframe" target="Bean.MemOfFamily" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;MemOfFamily&gt;"/>
+    <HasRelation name="hoKhauSelected" source="controllers.HoKhauManagerController.TachHoKhauController" target="Bean.HoKhauBean" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

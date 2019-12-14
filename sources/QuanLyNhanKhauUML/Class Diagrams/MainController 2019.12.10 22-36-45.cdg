@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="MainController">
+  <ClassDiagramComponents>
+    <Class name="MainController" package="controllers" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="jfrMain" type="JFrame" visibility="private"/>
+        <Field name="root" type="JPanel" visibility="private"/>
+        <Field name="kindSelected" type="String" visibility="private"/>
+        <Field name="listDanhMuc" type="List&lt;DanhMucBean&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JPanel" name="root"/>
+          <Argument type="JFrame" name="jfrMain"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setView" returnType="void" visibility="public">
+          <Argument type="JPanel" name="jpnItem"/>
+          <Argument type="JLabel" name="jlbItem"/>
+          <Argument type="String" name="kind"/>
+        </Method>
+        <Method name="setEvent" returnType="void" visibility="public">
+          <Argument type="List&lt;DanhMucBean&gt;" name="listDanhMuc"/>
+        </Method>
+        <Method name="setDefaultColor" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

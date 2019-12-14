@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="MysqlConnection">
+  <ClassDiagramComponents>
+    <Class name="MysqlConnection" package="services" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="getMysqlConnection" returnType="Connection" visibility="public" isStatic="true"/>
+        <Method name="getMysqlConnection" returnType="Connection" visibility="public" isStatic="true">
+          <Argument type="String" name="hostName"/>
+          <Argument type="String" name="dbName"/>
+          <Argument type="String" name="userName"/>
+          <Argument type="String" name="password"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

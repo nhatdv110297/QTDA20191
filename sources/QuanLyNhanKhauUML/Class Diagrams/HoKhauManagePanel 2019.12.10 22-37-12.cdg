@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="HoKhauManagePanel">
+  <ClassDiagramComponents>
+    <Class name="HoKhauManagePanel" package="views" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="parentFrame" type="JFrame" visibility="private"/>
+        <Field name="controller" type="HoKhauPanelController" visibility="private"/>
+        <Field name="chuyenDiBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jtfSearch" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="tableJpn" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="tachHoKhauBtn" type="javax.swing.JButton" visibility="private"/>
+        <Field name="themMoiBtn" type="javax.swing.JButton" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="JFrame" name="parentFrame"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
