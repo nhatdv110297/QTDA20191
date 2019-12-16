@@ -56,6 +56,24 @@ public class HoKhauService {
         return true;
     }
     
+//    public boolean checkPerson(int id) {
+//        try {
+//            Connection connection = MysqlConnection.getMysqlConnection();
+//            String query = "SELECT * FROM ho_khau INNER JOIN thanh_vien_cua_ho ON ho_khau.ID = thanh_vien_cua_ho.idHoKhau"
+//                        + " WHERE ho_khau.idChuHo = "
+//                        + id 
+//                        + " OR thanh_vien_cua_ho.idNhanKhau = "
+//                        + id;
+//            PreparedStatement preparedStatement = connection.prepareStatement(query);
+//            ResultSet rs = preparedStatement.executeQuery();
+//            if (rs.next()) {
+//                return false;
+//            }
+//        } catch (Exception e) {
+//        }
+//        return true;
+//    }
+    
     
     public boolean checkPerson(int id) {
         try {
