@@ -23,7 +23,7 @@ public class Organization extends Entity {
 		return headquarters;
 	}
 
-	public void setHeadquarters(String headquarters) {
+	 void setHeadquarters(String headquarters) {
 		this.headquarters = headquarters;
 	}
 
