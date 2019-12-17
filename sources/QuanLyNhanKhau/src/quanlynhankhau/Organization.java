@@ -15,7 +15,7 @@ public class Organization extends Entity {
 	}
 
 
-	public Organization() {
+	 Organization() {
 		// TODO Auto-generated constructor stub
 	}
 
