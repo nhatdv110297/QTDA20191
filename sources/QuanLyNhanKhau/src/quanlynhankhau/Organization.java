@@ -10,7 +10,7 @@ public class Organization extends Entity {
 	}
 
 	public Organization(String identifier, String name, String describe) {
-		super(identifier, name, describe);
+		
 		// TODO Auto-generated constructor stub
 	}
 
