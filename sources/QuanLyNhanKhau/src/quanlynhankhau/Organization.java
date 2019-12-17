@@ -6,7 +6,7 @@ public class Organization extends Entity {
 	
 	public Organization(String identifier, String name, String describe, String headquarters) {
 		super(identifier, name, describe);
-		this.headquarters = headquarters;
+		
 	}
 
 	public Organization(String identifier, String name, String describe) {
