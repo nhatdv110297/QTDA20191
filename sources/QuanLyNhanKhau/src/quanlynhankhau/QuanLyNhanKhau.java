@@ -9,6 +9,8 @@ import views.MainFrame;
  *
  * @author Hai
  */
+
+// day la dong comment
 public class QuanLyNhanKhau {
 
     public static Calendar calendar = Calendar.getInstance();
