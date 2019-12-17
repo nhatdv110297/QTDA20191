@@ -12,9 +12,9 @@ import views.LoginUI;
 // day la dong comment
 public class QuanLyNhanKhau {
 
-    public static Calendar calendar = Calendar.getInstance();
+    public  Calendar calendar = Calendar.getInstance();
     
-    public static void main(String[] args){
+    public static  main(String[] args){
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         } catch (Exception e) {
@@ -23,7 +23,7 @@ public class QuanLyNhanKhau {
 //        mainFrame.setLocationRelativeTo(null);
 //        mainFrame.setResizable(false);
 //        mainFrame.setVisible(true);
-        LoginUI loginUI = new LoginUI();
+         loginUI = new LoginUI();
         loginUI.setVisible(true); 
     }
     
