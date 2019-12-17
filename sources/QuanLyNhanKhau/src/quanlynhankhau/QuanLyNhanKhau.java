@@ -12,7 +12,7 @@ import views.LoginUI;
 // day la dong comment
 public class QuanLyNhanKhau {
 
-    public static Calendar calendar = Calendar.getInstance();
+    public  Calendar calendar = Calendar.getInstance();
     
     public static void main(String[] args){
         try {
