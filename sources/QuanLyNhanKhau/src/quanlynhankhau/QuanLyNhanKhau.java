@@ -23,7 +23,7 @@ public class QuanLyNhanKhau {
 //        mainFrame.setLocationRelativeTo(null);
 //        mainFrame.setResizable(false);
 //        mainFrame.setVisible(true);
-        LoginUI loginUI = new LoginUI();
+         loginUI = new LoginUI();
         loginUI.setVisible(true); 
     }
     
